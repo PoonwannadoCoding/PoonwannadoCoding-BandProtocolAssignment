@@ -1,7 +1,6 @@
 def superManChicken(n, k, p):
-    n = int(n)
-    k = int(k)
-    p = [int(num) for num in p]
+   
+    
     list_count = []
     for start_point_index in range(0,n-1):
         count = 0
@@ -17,7 +16,4 @@ def superManChicken(n, k, p):
     
     return max(list_count)
 
-n, k = input().split()
-input_list = input().split()
-
-print(superManChicken(n,k,input_list))
+print(superManChicken(5, 5, [2,5,10,12,15]))
